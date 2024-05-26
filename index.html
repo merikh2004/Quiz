@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSystem Examination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CCS 107 WebSystem & Technologies <br> Quiz</h1>
+    <div id="timer-setup">
+        <label for="time-input">Enter time (10-60 minutes):</label>
+        <input type="number" id="time-input" min="10" max="60">
+        <button id="start-quiz">Start Quiz</button>
+    </div>
+    <div class="quiz-container" id="quiz" style="display: none;">
+        <div class="quiz-header">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
+        <div id="time-left">Time: 00:00</div>
+    </div>
+    <button id="view-attempts">View Attempts</button>
+    <div id="attempts-display" style="display: none;">
+        <h2>Previous Attempts</h2>
+        <ul id="attempts-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
